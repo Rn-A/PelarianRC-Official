@@ -70,7 +70,7 @@ const CMSMerchandise: React.FC<CMSMerchandiseProps> = ({ db, onUpdate }) => {
             <div>
               <label className="block text-[10px] text-gray-400 font-black uppercase tracking-widest mb-2">Status</label>
               <select className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-white focus:border-[#0C61BC] outline-none" 
-                value={editing.status} onChange={e => setEditing({...editing, status: e.target.value as any})}>
+                value={editing.status} onChange={e => setEditing({...editing, status: e.target.value as 'open' | 'close'})}>
                 <option value="open">Open Pre-Order</option>
                 <option value="close">Closed</option>
               </select>
