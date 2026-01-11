@@ -41,15 +41,15 @@ const CMSArticles: React.FC<CMSArticlesProps> = ({ db, onUpdate }) => {
         <form onSubmit={handleSave} className="bg-[#1a1a1a] p-8 rounded-3xl border border-white/5 grid grid-cols-1 md:grid-cols-2 gap-6 shadow-2xl">
           <div className="col-span-full">
             <label className="block text-[10px] text-gray-400 font-black uppercase mb-2">Judul Artikel</label>
-            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editing.title || ''} onChange={(e: any) => setEditing({...editing, title: e.target.value})} />
+            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editing.title || ''} onChange={(e) => setEditing({...editing, title: e.target.value})} />
           </div>
           <div>
             <label className="block text-[10px] text-gray-400 font-black uppercase mb-2">Penulis</label>
-            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editing.authorName || ''} onChange={(e: any) => setEditing({...editing, authorName: e.target.value})} />
+            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editing.authorName || ''} onChange={(e) => setEditing({...editing, authorName: e.target.value})} />
           </div>
           <div>
             <label className="block text-[10px] text-gray-400 font-black uppercase mb-2">Gambar</label>
-            <input type="file" multiple accept="image/*" className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 file:bg-[#0C61BC] file:border-0 file:rounded-full file:text-white file:text-[10px] file:px-4" onChange={(e: any) => handleFileChange(e, 'main')} />
+            <input type="file" multiple accept="image/*" className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 file:bg-[#0C61BC] file:border-0 file:rounded-full file:text-white file:text-[10px] file:px-4" onChange={(e) => handleFileChange(e, 'main')} />
           </div>
           <div className="col-span-full">
             <label className="block text-[10px] text-gray-400 font-black uppercase mb-2">Konten</label>
