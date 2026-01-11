@@ -138,12 +138,12 @@ const CMSAbout: React.FC<CMSAboutProps> = ({ db, onUpdate }) => {
         <button 
           type="submit"
           className="w-full bg-[#0C61BC] hover:bg-white hover:text-black px-10 py-5 rounded-2xl font-black transition-all shadow-xl shadow-[#0C61BC]/20 uppercase tracking-widest"
-        ></button>
-         SIMPAN SEMUA PERUBAHAN
+        >
+          SIMPAN SEMUA PERUBAHAN
         </button>
       </form>
     </div>
-        )
-    };
+  );
+};
 
-    export deafult CMSAbout;
+export default CMSAbout;
