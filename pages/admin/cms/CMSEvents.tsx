@@ -35,11 +35,11 @@ const CMSEvents: React.FC<CMSEventsProps> = ({ db, onUpdate }) => {
         <form onSubmit={handleSave} className="bg-[#1a1a1a] p-8 rounded-3xl border border-white/5 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="col-span-full">
             <label className="block text-[10px] uppercase font-black text-gray-400 mb-2">Judul</label>
-            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editingEvent.title || ''} onChange={(e: any) => setEditingEvent({...editingEvent, title: e.target.value})} />
+            <input type="text" required className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editingEvent.title || ''} onChange={(e) => setEditingEvent({...editingEvent, title: e.target.value})} />
           </div>
           <div>
             <label className="block text-[10px] uppercase font-black text-gray-400 mb-2">Tanggal</label>
-            <input type="date" className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editingEvent.date || ''} onChange={(e: any) => setEditingEvent({...editingEvent, date: e.target.value})} />
+            <input type="date" className="w-full bg-black border border-white/10 rounded-xl px-4 py-3" value={editingEvent.date || ''} onChange={(e) => setEditingEvent({...editingEvent, date: e.target.value})} />
           </div>
           <div>
             <label className="block text-[10px] uppercase font-black text-gray-400 mb-2">Gambar</label>
